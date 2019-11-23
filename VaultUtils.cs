@@ -20,7 +20,7 @@ namespace Devies.Extensions.HashiCorpVault
                 IRestRequest request = new RestRequest("auth/kubernetes/login", Method.POST);
                 var requestBody = JsonConvert.SerializeObject(new {jwt = token, role = role});
 
-                request.AddParameter(MediaTypeNames.Application.Json, requestBody, ParameterType.RequestBody);
+                request.AddParameter("application/json", requestBody, ParameterType.RequestBody);
                 var response = client.Execute(request);
 
                 if (response.IsSuccessful)
@@ -38,7 +38,7 @@ namespace Devies.Extensions.HashiCorpVault
                 IRestRequest request = new RestRequest($"auth/userpass/login/{user}", Method.POST);
                 var requestBody = JsonConvert.SerializeObject(new {password = pass});
 
-                request.AddParameter(MediaTypeNames.Application.Json, requestBody, ParameterType.RequestBody);
+                request.AddParameter("application/json", requestBody, ParameterType.RequestBody);
                 var response = client.Execute(request);
 
                 if (response.IsSuccessful)

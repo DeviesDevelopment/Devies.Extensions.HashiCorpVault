@@ -28,7 +28,7 @@ namespace Devies.Extensions.HashiCorpVault
 
             var dict = vaultData.ToDictionary(x => x.Key, x =>
             {
-                var split = x.Value.Split("#");
+                var split = x.Value.Split('#');
 
                 if (split.Length < 2)
                 {
