@@ -10,11 +10,21 @@
         <Title>Devies.Extensions.HashiCorpVault</Title>
         <Description>An IConfigurationBuilder for HashiCorp vault</Description>
         <PackageLicenseUrl>https://github.com/DeviesDevelopment/Devies.Extensions.HashiCorpVault/blob/master/LICENSE</PackageLicenseUrl>
+        <PackageProjectUrl>https://github.com/DeviesDevelopment/Devies.Extensions.HashiCorpVault</PackageProjectUrl>
         <LangVersion>7.3</LangVersion>
         <Optimize>true</Optimize>
         <Version>1.0.0</Version>
+        <Summary>
+            An IConfigurationBuilder for HashiCorp vault. 
+            Build for netstandard 2.0.
+        </Summary>
         <UpdateVersionProperties>true</UpdateVersionProperties>
         <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <Copyright>Devies Development</Copyright>
+        <PackageReleaseNotes>First version</PackageReleaseNotes>
+        <PackageRequireLicenseAcceptance>no</PackageRequireLicenseAcceptance>
+        <DefaultLanguage>English</DefaultLanguage>
+        <PackageTags>dotnet, core, hashicorp, vault, iconfigurationbuilder, appsettings</PackageTags>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
