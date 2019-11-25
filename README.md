@@ -11,7 +11,7 @@
 
 ## How to
 
-1. Install the nuget package
+1. Install the nuget package `dotnet add package Devies.Extensions.HashiCorpVault`
 2. Login and get a token with `VaultUtils.LoginWithUserpass` or `VaultUtils.LoginWithK8SServiceAccount`, or your own way.
 3. Call `AddVaultEnvironments` on your `IConfigurationBuilder` with your vault-url and token
 4. AddVaultEnvironments HAS TO BE AFTER all other settings that may involve vault variables
